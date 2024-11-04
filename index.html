@@ -12,6 +12,7 @@
         <h1>BBSS Hack Club Website Showcase</h1>
         <p>Explore some amazing websites created by our members!</p>
         <img src="logo.webp" alt="Hack Club Logo" class="logo">
+        <button onclick="visitRandomWebsite()" class="random-button">Visit Random Website!</button>
     </header>
 
     <div class="container">
@@ -110,12 +111,40 @@
             <div class="project-description">Relaxing 3D environment with all of the above</div>
             <a href="https://gz56.github.io/glitch/" target="_blank" class="project-link">View Website</a>
         </div>
-
-
     </div>
 
-    <footer class="footer">
-        <p></p>
-    </footer>
+
+    <script>
+        function visitRandomWebsite() {
+            const websites = [
+                'https://syrz23.github.io/',
+                'https://ethandal.github.io/site/',
+                'https://saumilthecode.github.io/spooktober/',
+                'https://pirate-insults.vercel.app/',
+                'https://www.bbsshack.club/',
+                'https://dev.bbsshack.club/',
+                'https://saumilthecode.github.io/dancefloor/',
+                'https://saumilthecode.github.io/underdewater/',
+                'https://saumilthecode.github.io/coaster/',
+                'https://saumilthecode.github.io/anotherone/',
+                'https://saumilthecode.github.io/zen/',
+                'https://saumilthecode.github.io/glitch/',
+                'https://gz56.github.io/glitch/'
+            ];
+
+            const randomIndex = Math.floor(Math.random() * websites.length);
+            window.open(websites[randomIndex], '_blank');
+        }
+    </script>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <h4>Built by <a href="https://github.com/saumilthecode" target="_blank">Saumil</a> View our source code on <a href="https://github.com/saumilthecode/websites" target="_blank"> GitHub.</a></h4>
+        <h4>Fiscally sponsored by HCB! Check out our finances <a href="https://hcb.hackclub.com/bukit-batok-secondary-school-hack-club/transactions" target="_blank"> here!</a></h4>
+        <h2>Product of <a href="https://bbsshack.club" target="_blank">BBSS Hack Club</a></h2>
+    </div>
+</footer>
+
 </body>
 </html>
