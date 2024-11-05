@@ -11,6 +11,8 @@ header {
     color: rgb(137, 173, 244);
     padding: 2em;
     text-align: center;
+    z-index: 1000;
+
 }
 
 header {
@@ -18,7 +20,7 @@ header {
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100px;
@@ -137,4 +139,5 @@ p {
 .bbss-link:hover {
     color: rgb(148, 255, 216);
     text-decoration: wavy overline rgb(255, 0, 0);
+
 }
