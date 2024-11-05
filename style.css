@@ -128,3 +128,13 @@ p {
     background-color: #7e0000;
     text-decoration: green wavy underline;
 }
+
+.bbss-link {
+    color: rgb(137, 173, 244);
+    text-decoration: rgb(255, 0, 0) wavy underline;
+}
+
+.bbss-link:hover {
+    color: rgb(148, 255, 216);
+    text-decoration: wavy overline rgb(255, 0, 0);
+}
